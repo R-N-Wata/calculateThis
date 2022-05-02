@@ -1,0 +1,116 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  background: rgb(234,234,242);
+  background: linear-gradient(180deg, rgba(234,234,242,1) 0%, rgba(110,213,213,1) 48%, rgba(79,201,205,1) 99%);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+
+.calculator{
+  position:absolute;
+  width:300px;
+  border-radius: 7%;
+}
+
+input{
+  text-align: right;
+  width: 100% ;
+  padding:40px 10px 20px 10px;
+  background:black;
+  font-size:40px;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  
+}
+
+.calculatorBtns{
+  padding:30px 20px;
+  display:flex;
+  flex-wrap: wrap;
+  gap:10px;
+  background: rgb(248,248,249);
+background: linear-gradient(90deg, rgba(248,248,249,1) 0%, rgba(241,242,242,1) 38%, rgba(236,237,238,1) 99%);
+border-bottom-left-radius: 6%;
+  border-bottom-right-radius: 6%;
+
+}
+
+button{
+  flex-grow:1;
+  flex-basis: 22%;
+  flex-shrink:-4;
+  border-radius: 50%;
+  height:50px;
+  border:none;
+  background:white;
+  color:rgb(100, 99, 99)
+}
+
+button:hover{
+  background-color: rgb(209, 207, 207);
+}
+
+.AC{
+  background:rgb(234, 184, 109);
+  color:white;
+}
+
+.AC:hover{
+  background:rgb(145, 113, 68);
+}
+.equals{
+  background:rgb(130, 71, 146);
+  color:white;
+}
+.equals:hover{
+  background:rgb(71, 39, 80);
+}
+
+.symbols{
+  background-color: rgb(213, 195, 218);
+}
+.symbols:hover{
+  background-color: rgb(149, 136, 152);
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
