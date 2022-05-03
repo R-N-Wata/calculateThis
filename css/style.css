@@ -75,13 +75,15 @@ border-bottom-left-radius: 6%;
 button{
   flex-grow:1;
   flex-basis: 22%;
-  flex-shrink:-4;
+  /* flex-shrink:-4; */
   border-radius: 50%;
   height:50px;
   border:none;
   background:white;
   color:rgb(100, 99, 99)
 }
+
+
 
 button:hover{
   background-color: rgb(209, 207, 207);
@@ -90,6 +92,9 @@ button:hover{
 .AC{
   background:rgb(234, 184, 109);
   color:white;
+  flex-grow:2;
+  flex-basis: 44%;
+  border-radius: 30%;;
 }
 
 .AC:hover{
